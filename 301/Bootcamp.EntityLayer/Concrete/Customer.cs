@@ -1,4 +1,6 @@
-﻿namespace Bootcamp.EntityLayer.Concrete
+﻿using System.Collections.Generic;
+
+namespace Bootcamp.EntityLayer.Concrete
 {
     public class Customer
     {
@@ -7,5 +9,6 @@
         public string CustomerLastName { get; set; }
         public string CustomerDistrict { get; set; }
         public string CustomerCity { get; set; }
+        public List<Order> Orders { get; set; }
     }
 }

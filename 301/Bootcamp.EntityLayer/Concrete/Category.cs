@@ -1,4 +1,6 @@
-﻿namespace Bootcamp.EntityLayer.Concrete
+﻿using System.Collections.Generic;
+
+namespace Bootcamp.EntityLayer.Concrete
 {
     public class Category
     {
@@ -14,6 +16,7 @@
         public int CategoryId { get; set; } //this is primary key and identifier
         public string CategoryName { get; set; }
         public string CategoryStatus { get; set; }
+        public List<Product> Products { get; set; } //this is a navigation property
 
     }
 }
