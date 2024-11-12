@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.BusinessLayer", "3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Presentation", "301\Bootcamp.Presentation\Bootcamp.Presentation.csproj", "{34000491-7293-4C5F-A145-44F8BACDA93A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.EFProject-DBFirstAPP", "301\Bootcamp.EFProject-DBFirstAPP\Bootcamp.EFProject-DBFirstAPP.csproj", "{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{34000491-7293-4C5F-A145-44F8BACDA93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34000491-7293-4C5F-A145-44F8BACDA93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34000491-7293-4C5F-A145-44F8BACDA93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{0A71ECB7-5949-4004-B267-A1283D9B795F} = {6CAFFBE8-8468-46BF-B297-56106DB0CD64}
 		{FB3E312F-3A25-41E9-B13A-AAFC0C18B949} = {6CAFFBE8-8468-46BF-B297-56106DB0CD64}
 		{34000491-7293-4C5F-A145-44F8BACDA93A} = {6CAFFBE8-8468-46BF-B297-56106DB0CD64}
+		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2} = {6CAFFBE8-8468-46BF-B297-56106DB0CD64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9916E2B3-7714-4ACF-B485-AA2595A08F49}
