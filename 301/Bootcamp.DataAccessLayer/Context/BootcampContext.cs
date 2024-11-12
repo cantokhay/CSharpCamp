@@ -1,6 +1,7 @@
 ﻿using Bootcamp.EntityLayer.Concrete;
 using System.Data.Entity;
 
+
 namespace Bootcamp.DataAccessLayer.Context
 {
     public class BootcampContext : DbContext
