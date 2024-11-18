@@ -12,11 +12,10 @@ namespace Bootcamp.EFProject_DBFirstAPP
     using System;
     using System.Collections.Generic;
     
-    public partial class Customer
+    public partial class Admin
     {
-        public int CustomerId { get; set; }
-        public string CustomerFirstName { get; set; }
-        public string CustomerLastName { get; set; }
-        public Nullable<decimal> CustomerBalance { get; set; }
+        public int AdminId { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
     }
 }
