@@ -15,7 +15,7 @@ namespace Bootcamp.EFProject_DBFirstAPP
         private void btnList_Click(object sender, EventArgs e)
         {
             var values = db.Guide.ToList();
-            dataGridView1.DataSource = values;
+            dgvGuidesList.DataSource = values;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace Bootcamp.EFProject_DBFirstAPP
         {
             int id = int.Parse(txtId.Text);
             var result = db.Guide.Where(x => x.GuideId == id).ToList();
-            dataGridView1.DataSource = result;
+            dgvGuidesList.DataSource = result;
         }
     }
 }

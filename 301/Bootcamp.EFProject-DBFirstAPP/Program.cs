@@ -16,7 +16,8 @@ namespace Bootcamp.EFProject_DBFirstAPP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmLocation());
+            //Application.Run(new Form1());
         }
     }
 }
