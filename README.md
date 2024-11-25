@@ -53,6 +53,7 @@ This project involves a dynamic statistics panel for a tourism application, buil
 - **Custom Insights**: Provides city-specific and guide-specific data through dynamic queries.
 - **EF Versatility**: Demonstrates the flexibility of EF in handling diverse queries and aggregations.
 - And here is a screenshot of one of most attractive window of the project. I used the EF methods that i mentioned above :
+
 ![Tourism Statistics Dashboard](301/Bootcamp.EFProject-DBFirstAPP/SSs/StatWindowSS.JPG)
 
 ---
