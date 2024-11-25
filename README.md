@@ -44,4 +44,16 @@ In the final project, I focused on creating modular and reusable code by definin
 
 ---
 
+
+## 🌍 Project 9: Tourism Statistics Dashboard
+This project involves a dynamic statistics panel for a tourism application, built using **Entity Framework (EF)**. The panel fetches real-time data such as location counts, average tour prices, and guide assignments from a relational database.
+
+### Highlights:
+- **Real-Time Data Updates**: Integrates EF methods like `Count`, `Sum`, and `Average` for efficient data processing.
+- **Custom Insights**: Provides city-specific and guide-specific data through dynamic queries.
+- **EF Versatility**: Demonstrates the flexibility of EF in handling diverse queries and aggregations.
+- And here is a screenshot of one of most attractive window of the project : 
+
+---
+
 These projects gave me hands-on experience with essential C# concepts, setting a solid foundation for further, more complex applications. Looking forward to building upon these basics in future projects!
