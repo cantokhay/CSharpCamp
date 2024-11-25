@@ -52,7 +52,8 @@ This project involves a dynamic statistics panel for a tourism application, buil
 - **Real-Time Data Updates**: Integrates EF methods like `Count`, `Sum`, and `Average` for efficient data processing.
 - **Custom Insights**: Provides city-specific and guide-specific data through dynamic queries.
 - **EF Versatility**: Demonstrates the flexibility of EF in handling diverse queries and aggregations.
-- And here is a screenshot of one of most attractive window of the project : 
+- And here is a screenshot of one of most attractive window of the project :
+![Tourism Statistics Dashboard](./SSs/StatWindowSS.JPG)
 
 ---
 
