@@ -6,7 +6,7 @@ namespace Bootcamp.DataAccessLayer.Abstract
     {
         void Insert(T entity);
         void Update(T entity);
-        void Delete(int id);
+        void Delete(T entity);
         List<T> GetAll();
         T GetById(int id);
     }
