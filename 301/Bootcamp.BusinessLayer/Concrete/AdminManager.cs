@@ -1,4 +1,5 @@
 ﻿using Bootcamp.BusinessLayer.Abstract;
+using Bootcamp.DataAccessLayer.Abstract;
 using Bootcamp.EntityLayer.Concrete;
 using System.Collections.Generic;
 
@@ -6,29 +7,36 @@ namespace Bootcamp.BusinessLayer.Concrete
 {
     public class AdminManager : IAdminService
     {
+        private readonly IAdminDal _adminDal;
+
+        public AdminManager(IAdminDal adminDal)
+        {
+            _adminDal = adminDal;
+        }
+
         public void TDelete(Admin entity)
         {
-            throw new System.NotImplementedException();
+            _adminDal.Delete(entity);
         }
 
         public List<Admin> TGetAll()
         {
-            throw new System.NotImplementedException();
+            return _adminDal.GetAll();
         }
 
         public Admin TGetById(int id)
         {
-            throw new System.NotImplementedException();
+            return _adminDal.GetById(id);
         }
 
         public void TInsert(Admin entity)
         {
-            throw new System.NotImplementedException();
+            _adminDal.Insert(entity);
         }
 
         public void TUpdate(Admin entity)
         {
-            throw new System.NotImplementedException();
+            _adminDal.Update(entity);
         }
     }
 }

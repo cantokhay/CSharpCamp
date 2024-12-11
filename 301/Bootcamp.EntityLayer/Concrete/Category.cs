@@ -15,7 +15,7 @@ namespace Bootcamp.EntityLayer.Concrete
 
         public int CategoryId { get; set; } //this is primary key and identifier
         public string CategoryName { get; set; }
-        public string CategoryStatus { get; set; }
+        public bool CategoryStatus { get; set; }
         public List<Product> Products { get; set; } //this is a navigation property
 
     }

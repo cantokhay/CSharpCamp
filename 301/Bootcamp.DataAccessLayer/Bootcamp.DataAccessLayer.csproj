@@ -63,9 +63,9 @@
     <Compile Include="EntityFramework\EFCustomerDal.cs" />
     <Compile Include="EntityFramework\EFOrderDal.cs" />
     <Compile Include="EntityFramework\EFProductDal.cs" />
-    <Compile Include="Migrations\202411121227237_mig1.cs" />
-    <Compile Include="Migrations\202411121227237_mig1.Designer.cs">
-      <DependentUpon>202411121227237_mig1.cs</DependentUpon>
+    <Compile Include="Migrations\202412111422397_init.cs" />
+    <Compile Include="Migrations\202412111422397_init.Designer.cs">
+      <DependentUpon>202412111422397_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,10 +81,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202411121227237_mig1.resx">
-      <DependentUpon>202411121227237_mig1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202412111422397_init.resx">
+      <DependentUpon>202412111422397_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

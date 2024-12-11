@@ -1,4 +1,5 @@
 ﻿using Bootcamp.BusinessLayer.Abstract;
+using Bootcamp.DataAccessLayer.Abstract;
 using Bootcamp.EntityLayer.Concrete;
 using System.Collections.Generic;
 
@@ -6,29 +7,36 @@ namespace Bootcamp.BusinessLayer.Concrete
 {
     public class OrderManager : IOrderService
     {
+        private readonly IOrderDal _orderDal;
+
+        public OrderManager(IOrderDal orderDal)
+        {
+            _orderDal = orderDal;
+        }
+
         public void TDelete(Order entity)
         {
-            throw new System.NotImplementedException();
+            _orderDal.Delete(entity);
         }
 
         public List<Order> TGetAll()
         {
-            throw new System.NotImplementedException();
+            return _orderDal.GetAll();
         }
 
         public Order TGetById(int id)
         {
-            throw new System.NotImplementedException();
+            return _orderDal.GetById(id);
         }
 
         public void TInsert(Order entity)
         {
-            throw new System.NotImplementedException();
+            _orderDal.Insert(entity);
         }
 
         public void TUpdate(Order entity)
         {
-            throw new System.NotImplementedException();
+            _orderDal.Update(entity);
         }
     }
 }

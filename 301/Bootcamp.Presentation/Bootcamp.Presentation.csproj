@@ -62,10 +62,19 @@
     <Compile Include="FrmCategory.Designer.cs">
       <DependentUpon>FrmCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduct.Designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCategory.resx">
       <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +103,14 @@
     <ProjectReference Include="..\Bootcamp.BusinessLayer\Bootcamp.BusinessLayer.csproj">
       <Project>{fb3e312f-3a25-41e9-b13a-aafc0c18b949}</Project>
       <Name>Bootcamp.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bootcamp.DataAccessLayer\Bootcamp.DataAccessLayer.csproj">
+      <Project>{0A71ECB7-5949-4004-B267-A1283D9B795F}</Project>
+      <Name>Bootcamp.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bootcamp.EntityLayer\Bootcamp.EntityLayer.csproj">
+      <Project>{52818F60-7ADB-4B54-880E-559C5533F12F}</Project>
+      <Name>Bootcamp.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
