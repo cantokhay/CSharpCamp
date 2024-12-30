@@ -41,6 +41,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpgrade = new System.Windows.Forms.Button();
             this.btnGetById = new System.Windows.Forms.Button();
+            this.btnFrmProduct = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoriesList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             this.dgvCategoriesList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCategoriesList.Location = new System.Drawing.Point(280, 20);
             this.dgvCategoriesList.Name = "dgvCategoriesList";
-            this.dgvCategoriesList.Size = new System.Drawing.Size(345, 250);
+            this.dgvCategoriesList.Size = new System.Drawing.Size(345, 286);
             this.dgvCategoriesList.TabIndex = 33;
             // 
             // label2
@@ -176,17 +177,30 @@
             this.btnGetById.UseVisualStyleBackColor = false;
             this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
+            // btnFrmProduct
+            // 
+            this.btnFrmProduct.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnFrmProduct.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFrmProduct.Location = new System.Drawing.Point(45, 283);
+            this.btnFrmProduct.Name = "btnFrmProduct";
+            this.btnFrmProduct.Size = new System.Drawing.Size(190, 30);
+            this.btnFrmProduct.TabIndex = 9;
+            this.btnFrmProduct.Text = "ÜRÜNLERE GİT";
+            this.btnFrmProduct.UseVisualStyleBackColor = false;
+            this.btnFrmProduct.Click += new System.EventHandler(this.btnFrmProduct_Click);
+            // 
             // FrmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(644, 286);
+            this.ClientSize = new System.Drawing.Size(644, 322);
             this.Controls.Add(this.radCategoryStatusPassive);
             this.Controls.Add(this.radCategoryStatusActive);
             this.Controls.Add(this.dgvCategoriesList);
             this.Controls.Add(this.txtCategoryName);
             this.Controls.Add(this.txtCategoryId);
+            this.Controls.Add(this.btnFrmProduct);
             this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.btnUpgrade);
             this.Controls.Add(this.btnDelete);
@@ -197,6 +211,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCategory";
             this.Text = "Kategoriler";
+            this.Load += new System.EventHandler(this.FrmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoriesList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -218,6 +233,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpgrade;
         private System.Windows.Forms.Button btnGetById;
+        private System.Windows.Forms.Button btnFrmProduct;
     }
 }
 

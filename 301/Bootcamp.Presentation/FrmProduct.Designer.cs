@@ -47,6 +47,7 @@
             this.cmbCategories = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnList2 = new System.Windows.Forms.Button();
+            this.btnFrmCategory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductsList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numProductStock)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             this.dgvProductsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductsList.Location = new System.Drawing.Point(280, 20);
             this.dgvProductsList.Name = "dgvProductsList";
-            this.dgvProductsList.Size = new System.Drawing.Size(660, 375);
+            this.dgvProductsList.Size = new System.Drawing.Size(660, 411);
             this.dgvProductsList.TabIndex = 43;
             // 
             // txtProductName
@@ -85,6 +86,7 @@
             this.btnGetById.TabIndex = 11;
             this.btnGetById.Text = "ID\'YE GORE GETIR";
             this.btnGetById.UseVisualStyleBackColor = false;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnUpgrade
             // 
@@ -96,6 +98,7 @@
             this.btnUpgrade.TabIndex = 10;
             this.btnUpgrade.Text = "GUNCELLE";
             this.btnUpgrade.UseVisualStyleBackColor = false;
+            this.btnUpgrade.Click += new System.EventHandler(this.btnUpgrade_Click);
             // 
             // btnDelete
             // 
@@ -119,6 +122,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "EKLE";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnList
             // 
@@ -187,6 +191,11 @@
             // numProductStock
             // 
             this.numProductStock.Location = new System.Drawing.Point(125, 80);
+            this.numProductStock.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.numProductStock.Name = "numProductStock";
             this.numProductStock.Size = new System.Drawing.Size(135, 20);
             this.numProductStock.TabIndex = 3;
@@ -228,12 +237,24 @@
             this.btnList2.UseVisualStyleBackColor = false;
             this.btnList2.Click += new System.EventHandler(this.btnList2_Click);
             // 
+            // btnFrmCategory
+            // 
+            this.btnFrmCategory.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnFrmCategory.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFrmCategory.Location = new System.Drawing.Point(45, 408);
+            this.btnFrmCategory.Name = "btnFrmCategory";
+            this.btnFrmCategory.Size = new System.Drawing.Size(190, 30);
+            this.btnFrmCategory.TabIndex = 11;
+            this.btnFrmCategory.Text = "KATEGORİYE GİT";
+            this.btnFrmCategory.UseVisualStyleBackColor = false;
+            this.btnFrmCategory.Click += new System.EventHandler(this.btnFrmCategory_Click);
+            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(959, 411);
+            this.ClientSize = new System.Drawing.Size(959, 447);
             this.Controls.Add(this.cmbCategories);
             this.Controls.Add(this.txtProductDescription);
             this.Controls.Add(this.numProductStock);
@@ -241,6 +262,7 @@
             this.Controls.Add(this.txtProductPrice);
             this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.txtProductId);
+            this.Controls.Add(this.btnFrmCategory);
             this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.btnUpgrade);
             this.Controls.Add(this.btnDelete);
@@ -255,6 +277,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmProduct";
             this.Text = "Ürünler";
+            this.Load += new System.EventHandler(this.FrmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductsList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numProductStock)).EndInit();
             this.ResumeLayout(false);
@@ -282,5 +305,6 @@
         private System.Windows.Forms.ComboBox cmbCategories;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnList2;
+        private System.Windows.Forms.Button btnFrmCategory;
     }
 }

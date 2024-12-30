@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Presentation", "30
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.EFProject-DBFirstAPP", "301\Bootcamp.EFProject-DBFirstAPP\Bootcamp.EFProject-DBFirstAPP.csproj", "{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "501", "501", "{11D1FAC3-547D-4963-A8BE-1C38C5C245C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampDapper", "501\BootcampDapper\BootcampDapper.csproj", "{C506D420-DFEE-4081-AC99-AD28183FBE61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +107,10 @@ Global
 		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C506D420-DFEE-4081-AC99-AD28183FBE61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C506D420-DFEE-4081-AC99-AD28183FBE61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C506D420-DFEE-4081-AC99-AD28183FBE61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C506D420-DFEE-4081-AC99-AD28183FBE61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +131,7 @@ Global
 		{FB3E312F-3A25-41E9-B13A-AAFC0C18B949} = {6CAFFBE8-8468-46BF-B297-56106DB0CD64}
 		{34000491-7293-4C5F-A145-44F8BACDA93A} = {6CAFFBE8-8468-46BF-B297-56106DB0CD64}
 		{9B1FD739-BA4B-41E3-8FFD-80589B14B0B2} = {6CAFFBE8-8468-46BF-B297-56106DB0CD64}
+		{C506D420-DFEE-4081-AC99-AD28183FBE61} = {11D1FAC3-547D-4963-A8BE-1C38C5C245C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9916E2B3-7714-4ACF-B485-AA2595A08F49}

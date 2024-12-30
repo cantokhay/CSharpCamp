@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bootcamp.Presentation
+namespace BootcampDapper
 {
     internal static class Program
     {
@@ -13,7 +16,7 @@ namespace Bootcamp.Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCategory());
+            Application.Run(new Form1());
         }
     }
 }

@@ -57,5 +57,17 @@ namespace Bootcamp.Presentation
             _categoryService.TUpdate(value);
             MessageBox.Show("Category updated successfully!");
         }
+
+        private void btnFrmProduct_Click(object sender, EventArgs e)
+        {
+            FrmProduct frmProduct = new FrmProduct();
+            frmProduct.Show();
+            this.Hide();
+        }
+
+        private void FrmCategory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
