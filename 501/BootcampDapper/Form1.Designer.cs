@@ -43,6 +43,12 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.lblTotalProductCountLabel = new System.Windows.Forms.Label();
+            this.lblTotalProductCountStat = new System.Windows.Forms.Label();
+            this.lblMaxPricedProductLabel = new System.Windows.Forms.Label();
+            this.lblMaxPricedProductStat = new System.Windows.Forms.Label();
+            this.lblCategoryCountLabel = new System.Windows.Forms.Label();
+            this.lblCategoryCountStat = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +66,7 @@
             this.txtProductId.Location = new System.Drawing.Point(85, 23);
             this.txtProductId.Name = "txtProductId";
             this.txtProductId.Size = new System.Drawing.Size(100, 20);
-            this.txtProductId.TabIndex = 1;
+            this.txtProductId.TabIndex = 0;
             // 
             // btnList
             // 
@@ -82,7 +88,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(205, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(512, 286);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.TabIndex = 0;
             // 
             // label2
             // 
@@ -159,6 +165,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "EKLE";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -171,6 +178,7 @@
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "SİL";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -183,13 +191,83 @@
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "GÜNCELLE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // lblTotalProductCountLabel
+            // 
+            this.lblTotalProductCountLabel.AutoSize = true;
+            this.lblTotalProductCountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTotalProductCountLabel.Location = new System.Drawing.Point(13, 309);
+            this.lblTotalProductCountLabel.Name = "lblTotalProductCountLabel";
+            this.lblTotalProductCountLabel.Size = new System.Drawing.Size(178, 20);
+            this.lblTotalProductCountLabel.TabIndex = 10;
+            this.lblTotalProductCountLabel.Text = "Toplam Ürün Sayısı : ";
+            // 
+            // lblTotalProductCountStat
+            // 
+            this.lblTotalProductCountStat.AutoSize = true;
+            this.lblTotalProductCountStat.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTotalProductCountStat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTotalProductCountStat.Location = new System.Drawing.Point(181, 305);
+            this.lblTotalProductCountStat.Name = "lblTotalProductCountStat";
+            this.lblTotalProductCountStat.Size = new System.Drawing.Size(81, 29);
+            this.lblTotalProductCountStat.TabIndex = 10;
+            this.lblTotalProductCountStat.Text = "666??";
+            // 
+            // lblMaxPricedProductLabel
+            // 
+            this.lblMaxPricedProductLabel.AutoSize = true;
+            this.lblMaxPricedProductLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMaxPricedProductLabel.Location = new System.Drawing.Point(47, 340);
+            this.lblMaxPricedProductLabel.Name = "lblMaxPricedProductLabel";
+            this.lblMaxPricedProductLabel.Size = new System.Drawing.Size(144, 20);
+            this.lblMaxPricedProductLabel.TabIndex = 10;
+            this.lblMaxPricedProductLabel.Text = "En Pahalı Ürün : ";
+            // 
+            // lblMaxPricedProductStat
+            // 
+            this.lblMaxPricedProductStat.AutoSize = true;
+            this.lblMaxPricedProductStat.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMaxPricedProductStat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblMaxPricedProductStat.Location = new System.Drawing.Point(181, 336);
+            this.lblMaxPricedProductStat.Name = "lblMaxPricedProductStat";
+            this.lblMaxPricedProductStat.Size = new System.Drawing.Size(81, 29);
+            this.lblMaxPricedProductStat.TabIndex = 10;
+            this.lblMaxPricedProductStat.Text = "666??";
+            // 
+            // lblCategoryCountLabel
+            // 
+            this.lblCategoryCountLabel.AutoSize = true;
+            this.lblCategoryCountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCategoryCountLabel.Location = new System.Drawing.Point(47, 369);
+            this.lblCategoryCountLabel.Name = "lblCategoryCountLabel";
+            this.lblCategoryCountLabel.Size = new System.Drawing.Size(143, 20);
+            this.lblCategoryCountLabel.TabIndex = 10;
+            this.lblCategoryCountLabel.Text = "Kategori Sayısı : ";
+            // 
+            // lblCategoryCountStat
+            // 
+            this.lblCategoryCountStat.AutoSize = true;
+            this.lblCategoryCountStat.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCategoryCountStat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblCategoryCountStat.Location = new System.Drawing.Point(181, 365);
+            this.lblCategoryCountStat.Name = "lblCategoryCountStat";
+            this.lblCategoryCountStat.Size = new System.Drawing.Size(81, 29);
+            this.lblCategoryCountStat.TabIndex = 10;
+            this.lblCategoryCountStat.Text = "666??";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(729, 310);
+            this.ClientSize = new System.Drawing.Size(729, 421);
+            this.Controls.Add(this.lblCategoryCountStat);
+            this.Controls.Add(this.lblCategoryCountLabel);
+            this.Controls.Add(this.lblMaxPricedProductStat);
+            this.Controls.Add(this.lblMaxPricedProductLabel);
+            this.Controls.Add(this.lblTotalProductCountStat);
+            this.Controls.Add(this.lblTotalProductCountLabel);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -208,6 +286,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,6 +310,12 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label lblTotalProductCountLabel;
+        private System.Windows.Forms.Label lblTotalProductCountStat;
+        private System.Windows.Forms.Label lblMaxPricedProductLabel;
+        private System.Windows.Forms.Label lblMaxPricedProductStat;
+        private System.Windows.Forms.Label lblCategoryCountLabel;
+        private System.Windows.Forms.Label lblCategoryCountStat;
     }
 }
 
