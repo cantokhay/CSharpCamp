@@ -1,4 +1,4 @@
-﻿namespace BootcampMongoDB
+﻿namespace Bootcamp601
 {
     partial class Form1
     {

@@ -43,7 +43,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampDapper", "501\Bootc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "601", "601", "{B7151CAF-CBC7-418A-A065-DF5DF3CCCE55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampMongoDB", "601\BootcampMongoDB\BootcampMongoDB.csproj", "{0A4AF046-E185-4FC2-991A-62077FE7A6C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.601", "601\BootcampMongoDB\Bootcamp.601.csproj", "{0A4AF046-E185-4FC2-991A-62077FE7A6C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace BootcampMongoDB.Entities
+namespace Bootcamp601.Entities
 {
     public class Customer
     {

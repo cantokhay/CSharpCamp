@@ -1,10 +1,10 @@
-﻿using BootcampMongoDB.Entities;
-using BootcampMongoDB.Services;
+﻿using Bootcamp601.Entities;
+using Bootcamp601.Services;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace BootcampMongoDB
+namespace Bootcamp601
 {
     public partial class Form1 : Form
     {

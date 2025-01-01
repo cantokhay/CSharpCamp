@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace BootcampMongoDB.Services
+namespace Bootcamp601.Services
 {
     public class MongoDBConnection
     {

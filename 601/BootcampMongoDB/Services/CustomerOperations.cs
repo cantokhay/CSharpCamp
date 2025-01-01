@@ -1,9 +1,9 @@
-﻿using BootcampMongoDB.Entities;
+﻿using Bootcamp601.Entities;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Collections.Generic;
 
-namespace BootcampMongoDB.Services
+namespace Bootcamp601.Services
 {
     public class CustomerOperations
     {
