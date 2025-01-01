@@ -261,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(729, 421);
+            this.ClientSize = new System.Drawing.Size(729, 403);
             this.Controls.Add(this.lblCategoryCountStat);
             this.Controls.Add(this.lblCategoryCountLabel);
             this.Controls.Add(this.lblMaxPricedProductStat);
