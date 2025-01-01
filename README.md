@@ -80,7 +80,7 @@ The 301 & 401 modules introduced advanced C# concepts, focusing on:
 - **Entity Framework (EF)**:
   - **Code First Approach**: Designing databases directly from C# classes.
   - **Database First Approach**: Generating C# models based on existing databases.
-- **Repository Design Pattern**: Implementing cleaner, reusable, and testable database operations.
+  - **Repository Design Pattern**: Implementing cleaner, reusable, and testable database operations.
 
 ---
 
@@ -94,6 +94,10 @@ This project introduced **Dapper**, a micro ORM, for lightweight and high-perfor
 - **Ease of Use**: Simplified mapping of database records to C# objects.
 - **Flexibility**: Provided direct control over SQL queries for complex scenarios.
 - **CRUD Operations**: Implemented all basic CRUD operations with clean and concise code.
+
+And here is a screenshot of the main form from this project:
+
+![Dapper Main Form](501/BootcampDapper/Images/501-MainForm.png)
 
 ---
 
