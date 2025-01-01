@@ -86,8 +86,8 @@ The 301 & 401 modules introduced advanced C# concepts, focusing on:
 
 ## 🚀 Bootcamp 501: Advanced Data Access with Dapper
 
-### 🖇️ Project 11: Lightweight Data Access
-This project introduced **Dapper**, a micro ORM, for lightweight and high-performance data access. The focus was on implementing efficient database interactions without the overhead of a full ORM.
+### 🖇️ Lightweight Data Access, Dapper
+**Dapper**, a micro ORM, for lightweight and high-performance data access. The focus was on implementing efficient database interactions without the overhead of a full ORM.
 
 #### Highlights:
 - **High-Performance Queries**: Leveraged Dapper to execute SQL queries and commands efficiently.
@@ -101,17 +101,26 @@ And here is a screenshot of the main form from this project:
 
 ---
 
-## 🌐 Bootcamp 601: NoSQL Databases with MongoDB
+## 🌐 Bootcamp 601: NoSQL and Relational Databases
 
-### 🌱 Project 12: Working with MongoDB
-This project explored **MongoDB**, a NoSQL database, for handling unstructured and semi-structured data. The project emphasized creating flexible and scalable solutions for modern applications.
+### 🌱 Working with MongoDB
+**MongoDB**, a NoSQL database, for handling unstructured and semi-structured data. The project emphasized creating flexible and scalable solutions for modern applications.
 
 #### Highlights:
 - **NoSQL Design Principles**: Learned to design collections and documents for efficient data storage.
 - **CRUD Operations**: Performed create, read, update, and delete operations using MongoDB's native drivers in C#.
 - **Scalability**: Focused on using MongoDB for applications with large and dynamic datasets.
-- **Aggregation Framework**: Utilized MongoDB’s powerful aggregation framework for advanced data analysis.
 
 ---
 
-These projects gave me hands-on experience with foundational, advanced, and modern data access techniques in C#. From traditional relational database approaches with EF to lightweight access with Dapper and scalable NoSQL solutions with MongoDB, I’ve built a comprehensive skill set ready for diverse application development.
+### 🛢️ PostgreSQL Integration
+**PostgreSQL**, a relational database solution for handling structured data. It provided an opportunity to explore the strengths of PostgreSQL in enterprise-grade applications.
+
+#### Highlights:
+- **Relational Database Management**: Worked with structured data using PostgreSQL.
+- **Advanced SQL Features**: Explored support for JSON, arrays, and window functions in queries.
+- **Database Optimization**: Applied indexing, query tuning, and other optimizations for enhanced performance.
+
+---
+
+These projects gave me hands-on experience with foundational, advanced, and modern data access techniques in C#. From traditional relational database approaches with EF and PostgreSQL to lightweight access with Dapper and scalable NoSQL solutions with MongoDB, I’ve built a comprehensive skill set ready for diverse application development.
