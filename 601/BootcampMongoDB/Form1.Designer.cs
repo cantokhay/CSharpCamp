@@ -42,9 +42,10 @@
             this.txtCustomerTotal = new System.Windows.Forms.TextBox();
             this.btnList = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnGetById = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,6 +173,7 @@
             this.btnList.TabIndex = 7;
             this.btnList.Text = "LİSTELE";
             this.btnList.UseVisualStyleBackColor = false;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnAdd
             // 
@@ -185,27 +187,29 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.BackColor = System.Drawing.Color.Peru;
-            this.button2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(142, 281);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 36);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "SİL";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnDelete.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Location = new System.Drawing.Point(12, 264);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(116, 54);
+            this.btnDelete.TabIndex = 11;
+            this.btnDelete.Text = "SİL";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button3
+            // btnUpdate
             // 
-            this.button3.BackColor = System.Drawing.Color.Peru;
-            this.button3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(142, 323);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 36);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "GÜNCELLE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.Peru;
+            this.btnUpdate.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdate.Location = new System.Drawing.Point(142, 281);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(116, 36);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "GÜNCELLE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // dataGridView1
             // 
@@ -213,18 +217,31 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(291, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(497, 353);
+            this.dataGridView1.Size = new System.Drawing.Size(497, 290);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // btnGetById
+            // 
+            this.btnGetById.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnGetById.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGetById.Location = new System.Drawing.Point(12, 197);
+            this.btnGetById.Name = "btnGetById";
+            this.btnGetById.Size = new System.Drawing.Size(116, 58);
+            this.btnGetById.TabIndex = 10;
+            this.btnGetById.Text = "ID\'ye GÖRE GETİR";
+            this.btnGetById.UseVisualStyleBackColor = false;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.ClientSize = new System.Drawing.Size(800, 377);
+            this.ClientSize = new System.Drawing.Size(800, 330);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnGetById);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.txtCustomerTotal);
@@ -263,9 +280,10 @@
         private System.Windows.Forms.TextBox txtCustomerTotal;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnGetById;
     }
 }
 
