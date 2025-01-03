@@ -173,6 +173,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartment.Designer.cs">
+      <DependentUpon>FrmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmployee.Designer.cs">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPostgreSQL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +197,12 @@
     <Compile Include="Services\MongoDBConnection.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartment.resx">
+      <DependentUpon>FrmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmployee.resx">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPostgreSQL.resx">
       <DependentUpon>FrmPostgreSQL.cs</DependentUpon>

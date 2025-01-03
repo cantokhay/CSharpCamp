@@ -14,7 +14,7 @@ namespace BootcampMongoDB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPostgreSQL());
+            Application.Run(new FrmEmployee());
         }
     }
 }
