@@ -41,10 +41,11 @@ namespace Bootcamp.FinancialCRM
         }
 
         #region Left Panel Buttons
-
-        private void btnQuit_Click(object sender, EventArgs e)
+        private void btnCategories_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form frmCategories = new FrmCategories();
+            frmCategories.Show();
+            this.Hide();
         }
 
         private void btnInvoices_Click(object sender, EventArgs e)
@@ -54,11 +55,37 @@ namespace Bootcamp.FinancialCRM
             this.Hide();
         }
 
+        private void btnSpendings_Click(object sender, EventArgs e)
+        {
+            Form frmSpendings = new FrmSpendings();
+            frmSpendings.Show();
+            this.Hide();
+        }
+
+        private void btnBankProcesses_Click(object sender, EventArgs e)
+        {
+            Form frmBankProcesses = new FrmBankProcesses();
+            frmBankProcesses.Show();
+            this.Hide();
+        }
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             Form frmDashboard = new FrmDashboard();
             frmDashboard.Show();
             this.Hide();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            Form frmSettings = new FrmSettings();
+            frmSettings.Owner = this;
+            frmSettings.Show();
+            this.Hide();
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         #endregion

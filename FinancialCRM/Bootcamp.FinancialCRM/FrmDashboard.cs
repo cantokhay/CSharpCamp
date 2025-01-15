@@ -50,7 +50,7 @@ namespace Bootcamp.FinancialCRM
 
             chartInvoiceData.Series.Clear();
             var series2 = chartInvoiceData.Series.Add("Faturalar");
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             foreach (var item in invoiceData)
             {
                 series2.Points.AddXY(item.InvoiceTitle, item.InvoiceAmount);
@@ -90,15 +90,18 @@ namespace Bootcamp.FinancialCRM
 
         #region Left Panel Buttons
 
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            Form frmCategories = new FrmCategories();
+            frmCategories.Show();
+            this.Hide();
+        }
+
         private void btnBanks_Click(object sender, EventArgs e)
         {
             Form frmBanks = new FrmBanks();
             frmBanks.Show();
             this.Hide();
-        }
-        private void btnQuit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btnInvoices_Click(object sender, EventArgs e)
@@ -106,6 +109,32 @@ namespace Bootcamp.FinancialCRM
             Form frmInvoices = new FrmInvoices();
             frmInvoices.Show();
             this.Hide();
+        }
+
+        private void btnSpendings_Click(object sender, EventArgs e)
+        {
+            Form frmSpendings = new FrmSpendings();
+            frmSpendings.Show();
+            this.Hide();
+        }
+
+        private void btnBankProcesses_Click(object sender, EventArgs e)
+        {
+            Form frmBankProcesses = new FrmBankProcesses();
+            frmBankProcesses.Show();
+            this.Hide();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            Form frmSettings = new FrmSettings();
+            frmSettings.Owner = this;
+            frmSettings.Show();
+            this.Hide();
+        }
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         #endregion

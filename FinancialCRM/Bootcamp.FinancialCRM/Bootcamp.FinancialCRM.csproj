@@ -56,11 +56,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\BankProcessDTOs\ResultBankProcessDTO.cs" />
+    <Compile Include="DTOs\SpendingDTOs\ResultSpendingDTO.cs" />
+    <Compile Include="FrmBankProcesses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBankProcesses.Designer.cs">
+      <DependentUpon>FrmBankProcesses.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBanks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmBanks.Designer.cs">
       <DependentUpon>FrmBanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategories.Designer.cs">
+      <DependentUpon>FrmCategories.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDashboard.cs">
       <SubType>Form</SubType>
@@ -73,6 +87,24 @@
     </Compile>
     <Compile Include="FrmInvoices.Designer.cs">
       <DependentUpon>FrmInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpendings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpendings.Designer.cs">
+      <DependentUpon>FrmSpendings.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BankDb.Context.cs">
       <AutoGen>True</AutoGen>
@@ -101,6 +133,7 @@
     <Compile Include="Models\Invoices.cs">
       <DependentUpon>BankDb.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\SessionManager.cs" />
     <Compile Include="Models\Spendings.cs">
       <DependentUpon>BankDb.tt</DependentUpon>
     </Compile>
@@ -112,14 +145,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBankProcesses.resx">
+      <DependentUpon>FrmBankProcesses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBanks.resx">
       <DependentUpon>FrmBanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategories.resx">
+      <DependentUpon>FrmCategories.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInvoices.resx">
       <DependentUpon>FrmInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpendings.resx">
+      <DependentUpon>FrmSpendings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,6 +211,19 @@
       <DependentUpon>BankDb.edmx</DependentUpon>
       <LastGenOutput>BankDb.cs</LastGenOutput>
     </Content>
+    <Content Include="Static_Images\Capture-Dashboard.JPG" />
+    <Content Include="Static_Images\Capture-Login.JPG" />
+    <Content Include="Static_Images\Capture-Processes.JPG" />
+    <Content Include="Static_Images\left-panel-bankprocesses.png" />
+    <Content Include="Static_Images\left-panel-banks.png" />
+    <Content Include="Static_Images\left-panel-categories.png" />
+    <Content Include="Static_Images\left-panel-invoices.png" />
+    <Content Include="Static_Images\left-panel-settings.png" />
+    <Content Include="Static_Images\left-panel-spendings.png" />
+    <Content Include="Static_Images\login-1.png" />
+    <Content Include="Static_Images\login-password.png" />
+    <Content Include="Static_Images\login-username.png" />
+    <Content Include="Static_Images\settings-1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
