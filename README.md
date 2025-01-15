@@ -123,4 +123,35 @@ And here is a screenshot of the main form from this project:
 
 ---
 
+## 💼 Bootcamp Final Project: Financial CRM
+
+### Financial CRM Overview
+The **Financial CRM Project** simplifies personal finance management for users. It enables users to track banks, balances, bills, and spending, providing tools for financial analysis and management.
+
+#### Key Features:
+- 🏦 **Registered Banks and Balances**: View balances across multiple banks.
+- 📑 **Bills Management**: Manage and pay bills effortlessly.
+- 💸 **Expense Tracking**: Track spending and add new expenses.
+- 💳 **Bank Transactions**: Filter and analyze detailed bank transactions.
+- 📊 **Dashboard**: Visualize financial status, including total balance and latest transactions, using dynamic charts.
+- ⚙️ **Settings**: Change user settings, including password updates.
+
+#### Technologies Used:
+- **C#**: Core programming language for the project, developed with OOP principles.
+- **Entity Framework**: ORM used for managing database interactions with ease.
+- **SQL Server**: Database management system for handling data storage and queries.
+- **LINQ**: For efficient and readable data queries.
+
+#### Screenshots:
+**Login Page**:  
+![Login](FinancialCRM/Bootcamp.FinancialCRM/Static_Images/Capture-Login.JPG)
+
+**Dashboard**:  
+![Dashboard](FinancialCRM/Bootcamp.FinancialCRM/Static_Images/Capture-Dashboard.JPG)
+
+**Bank Transactions**:  
+![Bank Process](FinancialCRM/Bootcamp.FinancialCRM/Static_Images/Capture-Processes.JPG)
+
+---
+
 These projects gave me hands-on experience with foundational, advanced, and modern data access techniques in C#. From traditional relational database approaches with EF and PostgreSQL to lightweight access with Dapper and scalable NoSQL solutions with MongoDB, I’ve built a comprehensive skill set ready for diverse application development.
