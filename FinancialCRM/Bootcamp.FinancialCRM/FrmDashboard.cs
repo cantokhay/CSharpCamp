@@ -120,5 +120,7 @@ namespace Bootcamp.FinancialCRM
         //Staj: Staj için ayrıca bir duyuruyu Linkedin'den paylaşacağım. Bu staj seçimi sadece kampı uygulayanlar arasında olacak.
 
         //Linkedin Paylaşımı: Sertifikanız size iletildikten sonra Linkedin'de emojilerle süslenmiş güzel bir metin paylaşmanızı ve beni etiketlemenizi rica edeceğim ağınıza epey katkı sağlarım. Buradaki metin için örneği 30 ders boyunca öğrendiğiniz konu başlıkları vs. olabilir bunu chatgpt ile güzel bir hale getirebilirsiniz :)
+        //https://docs.google.com/forms/d/e/1FAIpQLSfo1BqGlHAIxOtJBA9Dn2w9TzXvg06Wf15Oqt4Op1R2TH5hyg/viewform
+
     }
 }
